@@ -1,7 +1,7 @@
   var PosX = 280;
   var PosY = 250;
 function setup() {
-createCanvas(1750, 540);
+createCanvas(1550, 540);
     background(255, 204, 204)
 }
 function draw() {
