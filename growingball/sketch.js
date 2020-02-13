@@ -27,7 +27,7 @@ function draw() {
      ellipse (200,200,dotsize,dotsize,50); 
   }
   //tests if the dot reaches a certain size and if so activates color sequence
-  if (dotsize>400) {
+  if (dotsize>width) {
     //color sequence
       background(random(255),random(0),random(0))
   }
