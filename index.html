@@ -1,28 +1,40 @@
 <html>
-	<head>
-	
-	</head>
-	<style>
-		
-	body { 
-		background-image:url('WIN_20191013_12_33_47_Pro.jpg');
-    background-size:100%;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    height:100%;
-    width:100%;
-    	background: -webkit-linear-gradient(left, #ffcccc, #ccccff); 
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+    background: -webkit-linear-gradient(left, #ffcccc, #ccccff); 
     background: -o-linear-gradient(right, #ffcccc, ##ccccff); 
     background: -moz-linear-gradient(right, #ffcccc, #ccccff); 
     background: linear-gradient(to right, #ffcccc, #ccccff); 
     background-color: #ffcccc;
 	color: #e8e8e8;
 		text-align: center
-		}
-	</style>
+      }
+    </style>
+  </head>
+  <body data-rsssl=1>
+  	<canvas id="portfolio" width="515" height="70"></canvas>
+    <script>
+      var canvas = document.getElementById("portfolio");
+      var ctx = canvas.getContext('2d');
+      ctx.shadowColor = "rgb(190, 190, 190)";
+      ctx.shadowOffsetX = 10;
+      ctx.shadowOffsetY = 10
+      ctx.shadowBlur = 10;
+      ctx.font = "50px timesnewroman";
+      var gradient = ctx.createLinearGradient(0, 0, 150, 100);
+      gradient.addColorStop(0, "rgb(241, 42, 42)");
+      gradient.addColorStop(1, "rgb(241, 141, 42)");
+      ctx.fillStyle = gradient;
+      ctx.fillText("Aidan's IDMB Porfolio", 10, 50);
+    </script>    
 	<body>
-		<h1>Aidan's IDMD Portfolio</h1>
-		<h2>The man behind a code:</h2>
+    <font color="black">
+    <font face="timesnewroman">
+		<h1>The man behind a code:</h1>
+        </font>
 		<a href="http://www.aidangames.com/">
         <img src="WIN_20191013_12_33_47_Pro.jpg" alt="It's me" width="320"
          height="180">
@@ -32,14 +44,19 @@
             <p> I will go on to run this classroom
             <p> First I will learn p5.js, then I will learn CSS, then I will take over the world
             <p> I am here to win.
-            <h2>My work:</h2>
-		<p> Homework
+            <font color="black">
+            <h1>My work:</h1>
+            </font>
+		<h2> Homework
+        <font size="3">
 			<p><a href="https://aidan-lynch.github.io/idmd-portfolio/shapes">Shapes</a></li>
 			<p><a href="https://aidan-lynch.github.io/idmd-portfolio/robot">Robot With Keyboard</a></li>
-		<p> Projects
+            </font>
+		<h2> Projects
+        <font size="3">
 			<p><a href="https://aidan-lynch.github.io/idmd-portfolio/robotmouse">Robot With Mouse (Arms Increase With Speed)</a></li>
 			<p><a href="https://aidan-lynch.github.io/idmd-portfolio/moving_ball">Ball Bounces and Changes Colors</a></li>
 			<p><a href="https://aidan-lynch.github.io/idmd-portfolio/growingball">Ball Grows and Explodes</a></li>
 			<p><a href="https://aidan-lynch.github.io/idmd-portfolio/reactiveface">Reactive Face</a></li>
-	</body>
+            </font>
 </html>
