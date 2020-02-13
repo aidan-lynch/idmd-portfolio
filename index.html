@@ -1,4 +1,3 @@
-
 <html>
 <head>
     <style>
@@ -21,15 +20,11 @@
     <script>
         var item = document.querySelector("#moveItem");
         var itemRect = item.getBoundingClientRect();
-
         document.addEventListener("mousemove", followMouse, false);
-
         function followMouse(e) {
             var xPos = e.pageX - itemRect.width / 15;
             var yPos = e.pageY - itemRect.height / 15;
-
             console.log(xPos + " " + yPos);
-
             item.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
         }
     </script>
