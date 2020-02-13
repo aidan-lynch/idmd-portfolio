@@ -40,5 +40,7 @@ function reset() {
 clear()
 background(220)
 dotsize = 50
+    r = 0
+  fill(r,0,0)
    ellipse (200,200,dotsize,dotsize,50); 
 }
