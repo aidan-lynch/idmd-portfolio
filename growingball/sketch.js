@@ -1,3 +1,4 @@
+let button;
 //starting size of dot
 var dotsize=50; 
 //starting red color of dot
@@ -12,6 +13,9 @@ function setup() {
   fill(0);
   //starting ellipse
   ellipse (200,200,dotsize,dotsize,50); 
+        button = createButton('reset');
+  button.position(width-50,height-25);
+  button.mousePressed(reset);
 }
 //runs sequence 60 times a second
 function draw() {
@@ -31,4 +35,10 @@ function draw() {
     //color sequence
       background(random(255),random(0),random(0))
   }
+}
+function reset() {
+clear()
+background(220)
+dotsize = 50
+   ellipse (200,200,dotsize,dotsize,50); 
 }
