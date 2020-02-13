@@ -5,7 +5,6 @@ function setup() {
     button = createButton('reset');
   button.position(width-50,height-25);
   button.mousePressed(reset);
-  setupp = setup
 }
 
 function draw() {
