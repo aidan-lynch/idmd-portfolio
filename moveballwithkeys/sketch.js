@@ -7,6 +7,11 @@ function setup() {
 
 function draw() {
   background(12)
+  if (PosX > mouseX-25 && PosX < mouseX+25 && PosY > mouseY-25 && PosY < mouseY+25) { //changes color of ball if touching mouse
+    fill (255,0,0)
+  } else {
+    fill (255)
+  }
   //movement
    if (keyIsDown(LEFT_ARROW)) {
     PosX +=-3;
