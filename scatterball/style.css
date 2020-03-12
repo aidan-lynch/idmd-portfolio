@@ -1,8 +1,9 @@
 html, body {
   font-family: 'Cursive';
-          background-color: #e1edf5;
   margin: 0;
   padding: 0;
+  font-family: 'Cursive';
+  background-color: #e1edf5;
 }
 
 canvas {
